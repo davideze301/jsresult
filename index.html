@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Result checker</title>
+</head>
+<body>
+	<input id="number" placeholder="input your score">
+	<button type="button" onclick="myfunction()">submit</button>
+	<p id="results"></p>
+	
+	<script>
+		function myfunction () {
+			var x,text;
+			x=document.getElementById('number').value;
+			if(x>=70 && x<=100){
+				text="GRADE A:EXCELLENT";
+			}
+			document.getElementById("results").innerHTML=text;
+			if (x>=60 && x<=70){
+				text="GRADE B:VERY GOOD"
+			}
+				document.getElementById("results").innerHTML=text;
+				if (x>=50 && x<=60){
+					text="GRADE C:GOOD "
+				}
+				document.getElementById("results").innerHTML=text;
+				if (x>=45 && x<=50){
+					text="GRADE D:FAIR"
+				}
+				document.getElementById("results").innerHTML=text;
+				if (x>=40 && x<=45){
+					text="GRADE E:VERY FAIR"
+				}
+				document.getElementById("results").innerHTML=text;
+				if (x>=0 && x<=40){
+					text="GRADE F:VERY 	POOR"
+				}
+				document.getElementById("results").innerHTML=text;
+			
+
+		}
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
